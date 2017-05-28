@@ -91,7 +91,7 @@ else:
 			exit(1)
 		ts3conn.use(sid=778)
 		ts3conn.clientupdate(client_nickname="[WhaleCalls-BOT]")
-		token='153606345:AAGDdKnw41oLce5axJfKlqutMEnnb5jfnAQ'
+		token='xxxxxxxxxxx'
 		bot=telegram.Bot(token=token)
 		resp = ts3conn.whoami()
 		client_id=resp[0]['client_id']
