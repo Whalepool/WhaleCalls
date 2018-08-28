@@ -71,7 +71,8 @@ for update in reversed(updates):
 		whalecallsupdate=whalecallsupdate.replace("OKcoin", "OKCoin")
 		whalecallsupdate=whalecallsupdate.replace("@bitfinex", "Bitfinex")
 		whalecallsupdate=whalecallsupdate.replace("$BTCCNY", "BTCCNY")
-		whalecallsupdate=whalecallsupdate.replace("contract at", "contracts at")
+		# removed to fix non plural contracts from OKcoin tweets, example: Okcoin $BTCUSD Weekly futures has liquidated a short position of 2873 contract at 7,088.16 
+		# whalecallsupdate=whalecallsupdate.replace("contract at", "contracts at")
 		if "has liquidated" in whalecallsupdate:
 			if "Bi Weekly" in whalecallsupdate:
 				amountf = float(whalecallsupdate.split()[11])
